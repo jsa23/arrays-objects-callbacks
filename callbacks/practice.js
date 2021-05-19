@@ -151,6 +151,7 @@ function each(names, cb) {
 each(names, function(item, indice){
   console.log('The item in the ' + indice + ' position is ' + item)
 });
+
 // Do not edit the code above.
 
 
