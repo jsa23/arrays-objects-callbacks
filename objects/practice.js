@@ -100,8 +100,8 @@ var user2 = {
   Make that change without modifying the original object code above.
 */
 
-let change1 = user2.name.push(`Bryan G. Smith`)
- let change2 = user2.email.push(`bryan.smith@devmounta.in`)
+const change1 = user2.name.push(`Bryan G. Smith`)
+ const change2 = user2.email.push(`bryan.smith@devmounta.in`)
  console.log(change1)
  console.log(change2)
 
@@ -114,21 +114,25 @@ let change1 = user2.name.push(`Bryan G. Smith`)
 /*
   Create an empty object called methodCollection.
 */
-methodCollection = {}
+var methodCollection = {}
 
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object.
   One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console.
 */
 
-
+alertHello = function() {
+  return this.methodCollection + 'Hello';
+}
+logHello = function() {
+  return hello
+}
 
 /*
   Now call your alertHello and logHello methods.
 */
 
-console.log(alertHello)
-console.log(logHello)
+
 
 ////////// PROBLEM 6 //////////
 
@@ -137,14 +141,15 @@ console.log(logHello)
   Return a new object with all of the information that you passed in.
 */
 
-var obj = {
-  name: 'Jordan',
-  birthday: 12/22/22,
-  ssn: `44444`
-}
 function makePerson (name, birthday, ssn) {
-  return (obj)
+  var obj = {
+    "name": 'Jordan',
+    "birthday": 12/22/22,
+    "ssn": `44444`
+  }
+  return obj;
 }
+makePerson
 ////////// PROBLEM 7 //////////
 
 /*
@@ -153,5 +158,9 @@ function makePerson (name, birthday, ssn) {
 */
 
 function makeCard(cardNumber, expirationDate, securityCode) {
+  var object1 = {
 
+
+
+  }
 }
