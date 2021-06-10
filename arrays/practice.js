@@ -84,15 +84,10 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 */
 
 function evenFinder(nums) {
- let finishedArr = [];
- for(let i =0; i < nums.length; i++){
-   if (nums[i] % 2 === 0) {
-     console.log(nums[i]);
-   }
- }
- return finishedArr
+ const finishedArr = nums.filter(num => num % 2 === 0)
+  return (finishedArr)
 }
-console.log(evenFinder(finishedArr))
+console.log(finishedArr)
 
 
 
@@ -118,8 +113,12 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
   and the second item in the array being the odds array (all the odd values from numbersArray).
 */
 
-//Code Here
-
+function divider(numbersArray){
+  const evensArr = numbersArray.filter(num => num % 2 === 0);
+  console.log(evensArr);
+  const oddsArr = mumbersArray.filter(num => num % 1 === 0);
+  return oddsArr;
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -140,7 +139,14 @@ var getRandomArbitrary = function() {
   If it is, return true, if it's not, return false
 */
 
-//Code Here
+function finder(array){
+  for(i = 0; i < 30; i++){
+  return true;
+}
+let randomNumber = getRandomArbitrary();
+console.log(randomNumber)
+}
+
 
 
 
@@ -169,8 +175,12 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
   addItem() --> [];
 */
 
-//Code Here
-
+function removeItem(myGroceryList, item){
+  return [];
+}
+function addItem(myGroceryList, item) {
+  return [];
+}
 
 
 ////////// PROBLEM 9 //////////
@@ -179,7 +189,13 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
   Write a function called maker that creates an array, fills that array with numbers from 1 to 215, then returns the array.
 */
 
-//Code Here
+function maker(){
+  var myArray = [];
+  for(let i = 0; i <215; i++) {
+    myArray[i] = i + 1;
+  }
+  return myArray;
+}
 
 
 
@@ -195,7 +211,12 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
   Your output should look like this -> [15, 19, 26, 29, 35, 44, 58]
 */
   
-//Code Here
+function addTen(numbers){
+  for(let i = 0; i > numbers.length; i++){
+    numbers[i] += 10;
+  }
+  return [];
+}
 
 
 
@@ -220,7 +241,9 @@ for(var i = 0; i < num2; i++){
   Return the longer of the two arrays.
 */
 
-//Code Here
+function longer(arr1, arr2){
+  return [];
+}
 
 
 
@@ -232,7 +255,9 @@ for(var i = 0; i < num2; i++){
   Example: var arr1 = [1,2,3,4]; var arr2 = [2,4,5,6]; newArray // [2,4]
 */
 
-//Code Here
+function both(arr1, arr2){
+  return []
+}
 
 
 
@@ -273,16 +298,22 @@ var colt = {
   After that, console.log the length of the Array and make sure that it's equal to 4. 
 */
 
-//Code Here
-
-
+function devMountainEmployees(){
+  devMountainEmployees.push.joe;
+  devMountainEmployees.push.cahlan;
+  devMountainEmployees.push.ryan;
+  devMountainEmployees.push.colt;
+}
+console.log(devMountainEmployees.length())
 
 /*
   Now let's say Cahlan has to take a leave of absence.
   Loop through your devMountainEmployees until you find cahlan, then remove him from the array.
 */
 
-//Code Here
+for(let key in devMountainEmployees){
+  delete cahlan;
+}
 
 
 
@@ -294,7 +325,7 @@ var colt = {
   Create an empty array called users.
 */
 
-//Code Here
+var users = [];
 
 
 
@@ -315,7 +346,8 @@ var user1 = {
 };
 // Do not edit the code above.
 
-//Code Here
+users.push(user1);
+console.log(users)
 
 
 
@@ -328,9 +360,9 @@ var user1 = {
   Loop through your array of objects until you find Mark's account (use his email, mark.mciver@devmounta.in, to find him).
   Once you find the array index he's located in, delete him from the array.
 */
-
-//Code Here
-
+  for(let i = 0; i < 10; i++){
+delete users.user1.email
+  }
 
 
 /*
